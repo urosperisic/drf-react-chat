@@ -1,0 +1,50 @@
+py -m venv venv
+venv\Scripts\activate
+deactivate
+
+pip install django
+
+django-admin startproject djchat .
+
+pip install djangorestframework
+
+python manage.py runserver
+
+pip install python-dotenv
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+git ls-files --others --exclude-standard
+
+[
+    import os
+    from dotenv import load_dotenv
+
+    load_dotenv()
+
+    SECRET_KEY = os.environ.get("SECRET_KEY")
+
+    DEBUG = os.environ.get("DEBUG")
+]
+
+##### FORMATTING #####
+
+pip install black
+
+VSCODE Extensions -> Black Formatter, isort
+
+.vscode/settings.json
+pyproject.toml
+
+##### FORMATTING #####
+
+##### LINTING #####
+
+pip install flake8
+
+VSCODE Extensions -> Flake8
+
+.flake8
+
+##### LINTING #####
