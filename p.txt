@@ -48,3 +48,21 @@ VSCODE Extensions -> Flake8
 .flake8
 
 ##### LINTING #####
+
+##### 2 #####
+##### 2 #####
+
+python manage.py startapp server 
+
+##### 2 #####
+
+python manage.py makemigrations
+python manage.py migrate
+
+VSCODE Extensions -> SQLite
+
+python manage.py createsuperuser
+
+pip install drf-spectacular
+
+##### 2 #####
